@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Keypad : Interactable
 {
+    [SerializeField] private GameObject door;
+    private bool doorOpen;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +18,9 @@ public class Keypad : Interactable
     {
         
     }
-    protected override void Interact(){
-        Debug.Log("Interacted with " + gameObject.name);
+    protected override void Interact()
+    {
+        doorOpen = !doorOpen;
+        door.GetComponent<Animator>().SetBool("isOpen", doorOpen);
     }
 }

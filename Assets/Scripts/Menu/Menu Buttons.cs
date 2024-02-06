@@ -17,6 +17,7 @@ public class MenuButtons : MonoBehaviour
     public void OnQuitButton()
     {
         Application.Quit();
+        Debug.Log("Game is exiting");
     }
 
 }
