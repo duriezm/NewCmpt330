@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // Add me!!
+using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
@@ -18,6 +18,10 @@ public class MenuButtons : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Game is exiting");
+    }
+    public void OnTutorialButton()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 
 }
