@@ -10,6 +10,7 @@ public class PlayerMotor : MonoBehaviour
     public float speed = 5f;
     public float gravity = -9.8f;
     public float jumpHeight = 1.5f;
+    public float sprintSpeed = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +43,9 @@ public class PlayerMotor : MonoBehaviour
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
     }
-
+    public void sprint()
+    {
+        
+    }
 
 }

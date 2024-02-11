@@ -334,6 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4830d891a4561d2469521f8fc103b96d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useEvents: 0
   promptMessage: Press 'E' to start the game
   door: {fileID: 1326295751}
 --- !u!1 &491683219
@@ -567,6 +568,7 @@ MonoBehaviour:
   speed: 10
   gravity: -10
   jumpHeight: 2
+  sprintSpeed: 10
 --- !u!114 &714794520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1780,7 +1782,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3321514927635615130, guid: e632f1c1d79d6594e96f8e183bef872c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 375
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 3321514927635615130, guid: e632f1c1d79d6594e96f8e183bef872c, type: 3}
       propertyPath: m_LocalPosition.y
