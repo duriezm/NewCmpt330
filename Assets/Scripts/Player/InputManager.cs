@@ -28,6 +28,8 @@ public class InputManager : MonoBehaviour
     {
         //tell the playermotor to move using the value from our movement
         motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
+        if (Input.GetKey(KeyCode.LeftShift))
+            motor.sprint();
     }
     private void LateUpdate()
     {
