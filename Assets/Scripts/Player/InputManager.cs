@@ -30,6 +30,7 @@ public class InputManager : MonoBehaviour
         motor.ProcessMove(onFoot.Movement.ReadValue<Vector2>());
         if (Input.GetKey(KeyCode.LeftShift))
             motor.sprint();
+        
     }
     private void LateUpdate()
     {
