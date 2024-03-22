@@ -37,9 +37,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
-        Debug.Log("Quitting game...");
-        // Add your quit logic here (e.g., load main menu or exit application)
+        SceneManager.LoadScene("Main Menu");
     }
     public void Options()
     {
