@@ -50,5 +50,9 @@ public class PlayerMotor : MonoBehaviour
     {
         speed = sprintSpeed;
     }
+    public void normalSpeed()
+    {
+        speed = 5f;
+    }
 
 }
